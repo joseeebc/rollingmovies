@@ -59,29 +59,51 @@
         </div>
       </nav>
     </header>
-    <main id="main">
-      <section id="portada" class="portada"></section>
-      <section class="container-fluid my-4">
-        <h2 class="fw-light">Accion</h2>
-        <div class="wrapper" id="accion"></div>
-      </section>
-      <section class="container-fluid my-4">
-        <h2 class="fw-light">Aventuras</h2>
-        <div class="wrapper" id="aventura"></div>
-      </section>
-      <section class="container-fluid my-4">
-        <h2 class="fw-light">Comedia</h2>
-        <div class="wrapper" id="comedia"></div>
-      </section>
-      <section class="container-fluid my-4">
-        <h2 class="fw-light">Drama</h2>
-        <div class="wrapper" id="drama"></div>
-      </section>
-      <section class="container-fluid my-4">
-        <h2 class="fw-light">Romanticas</h2>
-        <div class="wrapper" id="romantica"></div>
-      </section>
-    </main>
+    <main class="card1">
+        <div class="container">
+            <h1 class="text-center mb-2">¡Disfrutá el cine como nunca!</h1>
+          
+            <div class="row">
+              <div class="col-lg-8 col-md-10 col-sm-12 col-12 mx-auto my-5">
+               <section class="card2"  >
+                  <div>
+                      <h4 class="text-center pt-3">Registrate con tu correo</h3>  
+                  </div>
+                  <div class="card-body">
+             <form id="formUsuario" onsubmit="guardarUsuario(event)">
+             <div class="my-auto">
+               <label for="InputEmail1" class="form-label">Tu correo electronico</label>
+               <input type="email" class="form-control" id="correoReg" aria-describedby="emailHelp" placeholder="juanperez@gmail.com"
+               onblur="validarMail(this)">
+               <div id="alerta" class="mt-2" role="alert"> </div>
+             </div>
+             <div class="my-3">
+               <label for="InputName1" class="form-label">Nombre de usuario</label>
+               <input type="text" class="form-control" id="usuarioNombre" placeholder="Escoja un nombre de usuario"
+               onblur="validarCampoRequerido(this)">
+             </div>
+             <div class="my-3">
+               <label for="InputPassword1" class="form-label">Contraseña</label>
+               <input type="password" class="form-control" id="usuarioContraseña" placeholder="Escriba una contraseña de al menos 5 caracteres"
+               onblur="validarContraseña(this)">
+             </div>
+             <div class="my-3">
+                 <label for="InputPassword1" class="form-label">Confirmar contraseña</label>
+                 <input type="password" class="form-control" id="usuarioContraseña2" placeholder="Repita la contraseña"
+                 onblur="validarRepetirContraseña(this)">
+               </div>
+             <div style="text-align: center">
+                <button type="submit" class="btn btn-md btn-block btn-primary">Registraste</button>
+             </div>
+             <h5 class="text-center mt-3">¿Ya estás registrado?<a href="login.html" class="mx-1"> <b class="text-primary">Inicia sesión</b></a></h5>
+           </form> 
+              </div> 
+                  </div>
+              </section>   
+              </div>
+            </div>   
+        </div>
+     </main>
     <footer class="mb-3">
       <div class="d-flex flex-column flex-md-row justify-content-center">
         <a class="m-2 text-center links" href="sobre-nosotros.html">Nosotros</a>
